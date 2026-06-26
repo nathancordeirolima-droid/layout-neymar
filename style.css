@@ -1,25 +1,29 @@
-*{
+{
     margin: 0;
     padding: 0;
 }
-body {
+
+body{
     font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
 }
-.cabecalho {
-    background-color: #000000;
+
+/* Cabeçalho */
+.cabecalho{
+    background-color: #009739; /* Verde */
     color: white;
     display: flex;
     justify-content: space-around;
-    align-items:center;
-    padding: 5px 0;
+    align-items: center;
+    padding: 10px 0;
 }
+
 .cabecalho-alura{
     width: 10%;
 }
+
 .cabecalho-imagem{
-     width: 25%;
-    
-    
+    width: 25%;
 }
 
 .cabecalho-lista-item{
@@ -28,34 +32,57 @@ body {
     font-size: 25px;
 }
 
-.escola-imagem{
-    width: 10%;
-    
-}
-
+/* Seção principal */
 .escola{
-    background-image: linear-gradient(#08e600,#ffd102);
-    color:white;
+    background-image: linear-gradient(#009739, #FFDF00);
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 24px 0;
+    padding: 40px 0;
 }
 
 .escola-div-conteudo{
-    width: 35%;
+    width: 45%;
 }
 
+.escola-imagem{
+    width: 25%;
+    border-radius: 10px;
+}
 
 .escola-titulo{
-    padding: 34px 0;
+    padding: 20px 0;
+    font-size: 40px;
 }
 
+/* Jogadores */
 .estudante{
-    padding: 24px 0;
+    padding: 30px 0;
 }
+
+.estudante-titulo{
+    text-align: center;
+    padding: 30px 0;
+    color: #009739;
+    font-size: 35px;
+}
+
+.estudante-todos{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: white;
+}
+
+.estudante-div{
+    text-align: center;
+    padding: 16px;
+}
+
 .estudante-imagem{
     width: 140px;
+    border-radius: 50%;
+    border: 3px solid #FFDF00;
 }
 
 .estudante-icone{
@@ -63,35 +90,21 @@ body {
     padding: 4px 8px;
 }
 
-.estudante-div{
-    text-align: center;
-    padding: 16px 0;
-}
-
-.estudante-titulo{
-    text-align: center;
-    padding: 50px 0;
-}
-
-.estudante-todos{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    background-color: rgb(251, 252, 255);
-}
-
+/* Rodapé */
 .rodape{
-    background-color: rgba(1, 81, 255, 0.925);
+    background-color: #002776; /* Azul */
     text-align: center;
 }
 
 .rodape-imagem{
     height: 60px;
     padding: 12px 0;
-   
 }
 
+/* Textos */
 p{
     text-align: justify;
+    line-height: 1.6;
 }
 
 h2{
